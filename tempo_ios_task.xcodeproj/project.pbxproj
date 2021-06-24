@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		975627EF26853536004824FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975627EE26853536004824FE /* AppDelegate.swift */; };
+		975627F126853536004824FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975627F026853536004824FE /* SceneDelegate.swift */; };
+		975627F82685353D004824FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975627F72685353D004824FE /* Assets.xcassets */; };
+		975627FB2685353D004824FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975627F92685353D004824FE /* LaunchScreen.storyboard */; };
+		975628062685353D004824FE /* tempo_ios_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975628052685353D004824FE /* tempo_ios_taskTests.swift */; };
+		975628112685353D004824FE /* tempo_ios_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975628102685353D004824FE /* tempo_ios_taskUITests.swift */; };
+		9756283D2685385F004824FE /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756283C2685385F004824FE /* HUDView.swift */; };
+		97562847268538AA004824FE /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97562846268538AA004824FE /* BaseNavigationController.swift */; };
+		9756284F268538DA004824FE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756284E268538DA004824FE /* BaseViewController.swift */; };
+		9756285626853976004824FE /* UIViewController+Extn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756285526853976004824FE /* UIViewController+Extn.swift */; };
+		9756285E2685399B004824FE /* String+Extn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756285D2685399B004824FE /* String+Extn.swift */; };
+		9756286726853A0F004824FE /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756286626853A0F004824FE /* Alertable.swift */; };
+		9756286F26853A86004824FE /* HUDDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756286E26853A86004824FE /* HUDDisplayable.swift */; };
+		9756287426853AA7004824FE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756287326853AA7004824FE /* Coordinator.swift */; };
+		9756287926853AC8004824FE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756287826853AC8004824FE /* AppCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		975628022685353D004824FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 975627E326853535004824FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 975627EA26853536004824FE;
+			remoteInfo = tempo_ios_task;
+		};
+		9756280D2685353D004824FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 975627E326853535004824FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 975627EA26853536004824FE;
+			remoteInfo = tempo_ios_task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		975627EB26853536004824FE /* tempo_ios_task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tempo_ios_task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		975627EE26853536004824FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		975627F026853536004824FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		975627F72685353D004824FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		975627FA2685353D004824FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		975627FC2685353D004824FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		975628012685353D004824FE /* tempo_ios_taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tempo_ios_taskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		975628052685353D004824FE /* tempo_ios_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempo_ios_taskTests.swift; sourceTree = "<group>"; };
+		975628072685353D004824FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9756280C2685353D004824FE /* tempo_ios_taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tempo_ios_taskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		975628102685353D004824FE /* tempo_ios_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempo_ios_taskUITests.swift; sourceTree = "<group>"; };
+		975628122685353D004824FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9756283C2685385F004824FE /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		97562846268538AA004824FE /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		9756284E268538DA004824FE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9756285526853976004824FE /* UIViewController+Extn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extn.swift"; sourceTree = "<group>"; };
+		9756285D2685399B004824FE /* String+Extn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extn.swift"; sourceTree = "<group>"; };
+		9756286626853A0F004824FE /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		9756286E26853A86004824FE /* HUDDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDDisplayable.swift; sourceTree = "<group>"; };
+		9756287326853AA7004824FE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9756287826853AC8004824FE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		975627E826853536004824FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975627FE2685353D004824FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975628092685353D004824FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		975627E226853535004824FE = {
+			isa = PBXGroup;
+			children = (
+				975627ED26853536004824FE /* tempo_ios_task */,
+				975628042685353D004824FE /* tempo_ios_taskTests */,
+				9756280F2685353D004824FE /* tempo_ios_taskUITests */,
+				975627EC26853536004824FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		975627EC26853536004824FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				975627EB26853536004824FE /* tempo_ios_task.app */,
+				975628012685353D004824FE /* tempo_ios_taskTests.xctest */,
+				9756280C2685353D004824FE /* tempo_ios_taskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		975627ED26853536004824FE /* tempo_ios_task */ = {
+			isa = PBXGroup;
+			children = (
+				97562864268539E5004824FE /* Coordinators */,
+				97562863268539DA004824FE /* Scenes */,
+				97562862268539CF004824FE /* Model */,
+				97562865268539F7004824FE /* Protocols */,
+				9756285326853952004824FE /* Utilities */,
+				9756284426853883004824FE /* Base */,
+				9756283B26853838004824FE /* SupportingFiles */,
+				9756282B268537D9004824FE /* Core */,
+				975628242685379B004824FE /* Configurations */,
+				975627F72685353D004824FE /* Assets.xcassets */,
+				975627F92685353D004824FE /* LaunchScreen.storyboard */,
+			);
+			path = tempo_ios_task;
+			sourceTree = "<group>";
+		};
+		975628042685353D004824FE /* tempo_ios_taskTests */ = {
+			isa = PBXGroup;
+			children = (
+				975628052685353D004824FE /* tempo_ios_taskTests.swift */,
+				975628072685353D004824FE /* Info.plist */,
+			);
+			path = tempo_ios_taskTests;
+			sourceTree = "<group>";
+		};
+		9756280F2685353D004824FE /* tempo_ios_taskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				975628102685353D004824FE /* tempo_ios_taskUITests.swift */,
+				975628122685353D004824FE /* Info.plist */,
+			);
+			path = tempo_ios_taskUITests;
+			sourceTree = "<group>";
+		};
+		975628242685379B004824FE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				975627FC2685353D004824FE /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		9756282B268537D9004824FE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				975627EE26853536004824FE /* AppDelegate.swift */,
+				975627F026853536004824FE /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9756283B26853838004824FE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9756283C2685385F004824FE /* HUDView.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		9756284426853883004824FE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9756284526853892004824FE /* Parents */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9756284526853892004824FE /* Parents */ = {
+			isa = PBXGroup;
+			children = (
+				97562846268538AA004824FE /* BaseNavigationController.swift */,
+				9756284E268538DA004824FE /* BaseViewController.swift */,
+			);
+			path = Parents;
+			sourceTree = "<group>";
+		};
+		9756285326853952004824FE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				975628542685395D004824FE /* Extionstions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		975628542685395D004824FE /* Extionstions */ = {
+			isa = PBXGroup;
+			children = (
+				9756285526853976004824FE /* UIViewController+Extn.swift */,
+				9756285D2685399B004824FE /* String+Extn.swift */,
+			);
+			path = Extionstions;
+			sourceTree = "<group>";
+		};
+		97562862268539CF004824FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		97562863268539DA004824FE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		97562864268539E5004824FE /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9756287826853AC8004824FE /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		97562865268539F7004824FE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9756286626853A0F004824FE /* Alertable.swift */,
+				9756286E26853A86004824FE /* HUDDisplayable.swift */,
+				9756287326853AA7004824FE /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		975627EA26853536004824FE /* tempo_ios_task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975628152685353D004824FE /* Build configuration list for PBXNativeTarget "tempo_ios_task" */;
+			buildPhases = (
+				975627E726853536004824FE /* Sources */,
+				975627E826853536004824FE /* Frameworks */,
+				975627E926853536004824FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tempo_ios_task;
+			productName = tempo_ios_task;
+			productReference = 975627EB26853536004824FE /* tempo_ios_task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		975628002685353D004824FE /* tempo_ios_taskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975628182685353D004824FE /* Build configuration list for PBXNativeTarget "tempo_ios_taskTests" */;
+			buildPhases = (
+				975627FD2685353D004824FE /* Sources */,
+				975627FE2685353D004824FE /* Frameworks */,
+				975627FF2685353D004824FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				975628032685353D004824FE /* PBXTargetDependency */,
+			);
+			name = tempo_ios_taskTests;
+			productName = tempo_ios_taskTests;
+			productReference = 975628012685353D004824FE /* tempo_ios_taskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9756280B2685353D004824FE /* tempo_ios_taskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9756281B2685353D004824FE /* Build configuration list for PBXNativeTarget "tempo_ios_taskUITests" */;
+			buildPhases = (
+				975628082685353D004824FE /* Sources */,
+				975628092685353D004824FE /* Frameworks */,
+				9756280A2685353D004824FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9756280E2685353D004824FE /* PBXTargetDependency */,
+			);
+			name = tempo_ios_taskUITests;
+			productName = tempo_ios_taskUITests;
+			productReference = 9756280C2685353D004824FE /* tempo_ios_taskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		975627E326853535004824FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					975627EA26853536004824FE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					975628002685353D004824FE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 975627EA26853536004824FE;
+					};
+					9756280B2685353D004824FE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 975627EA26853536004824FE;
+					};
+				};
+			};
+			buildConfigurationList = 975627E626853535004824FE /* Build configuration list for PBXProject "tempo_ios_task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 975627E226853535004824FE;
+			productRefGroup = 975627EC26853536004824FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				975627EA26853536004824FE /* tempo_ios_task */,
+				975628002685353D004824FE /* tempo_ios_taskTests */,
+				9756280B2685353D004824FE /* tempo_ios_taskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		975627E926853536004824FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975627FB2685353D004824FE /* LaunchScreen.storyboard in Resources */,
+				975627F82685353D004824FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975627FF2685353D004824FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9756280A2685353D004824FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		975627E726853536004824FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9756287926853AC8004824FE /* AppCoordinator.swift in Sources */,
+				9756284F268538DA004824FE /* BaseViewController.swift in Sources */,
+				97562847268538AA004824FE /* BaseNavigationController.swift in Sources */,
+				9756287426853AA7004824FE /* Coordinator.swift in Sources */,
+				9756283D2685385F004824FE /* HUDView.swift in Sources */,
+				9756285E2685399B004824FE /* String+Extn.swift in Sources */,
+				975627EF26853536004824FE /* AppDelegate.swift in Sources */,
+				975627F126853536004824FE /* SceneDelegate.swift in Sources */,
+				9756286726853A0F004824FE /* Alertable.swift in Sources */,
+				9756286F26853A86004824FE /* HUDDisplayable.swift in Sources */,
+				9756285626853976004824FE /* UIViewController+Extn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975627FD2685353D004824FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975628062685353D004824FE /* tempo_ios_taskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975628082685353D004824FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975628112685353D004824FE /* tempo_ios_taskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		975628032685353D004824FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 975627EA26853536004824FE /* tempo_ios_task */;
+			targetProxy = 975628022685353D004824FE /* PBXContainerItemProxy */;
+		};
+		9756280E2685353D004824FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 975627EA26853536004824FE /* tempo_ios_task */;
+			targetProxy = 9756280D2685353D004824FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		975627F92685353D004824FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				975627FA2685353D004824FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		975628132685353D004824FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		975628142685353D004824FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		975628162685353D004824FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tempo_ios_task/Configurations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robusta.task.tempo-ios-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		975628172685353D004824FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tempo_ios_task/Configurations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robusta.task.tempo-ios-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		975628192685353D004824FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tempo_ios_taskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robusta.task.tempo-ios-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tempo_ios_task.app/tempo_ios_task";
+			};
+			name = Debug;
+		};
+		9756281A2685353D004824FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tempo_ios_taskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robusta.task.tempo-ios-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tempo_ios_task.app/tempo_ios_task";
+			};
+			name = Release;
+		};
+		9756281C2685353D004824FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tempo_ios_taskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robusta.task.tempo-ios-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tempo_ios_task;
+			};
+			name = Debug;
+		};
+		9756281D2685353D004824FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tempo_ios_taskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robusta.task.tempo-ios-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tempo_ios_task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		975627E626853535004824FE /* Build configuration list for PBXProject "tempo_ios_task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975628132685353D004824FE /* Debug */,
+				975628142685353D004824FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975628152685353D004824FE /* Build configuration list for PBXNativeTarget "tempo_ios_task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975628162685353D004824FE /* Debug */,
+				975628172685353D004824FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975628182685353D004824FE /* Build configuration list for PBXNativeTarget "tempo_ios_taskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975628192685353D004824FE /* Debug */,
+				9756281A2685353D004824FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9756281B2685353D004824FE /* Build configuration list for PBXNativeTarget "tempo_ios_taskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9756281C2685353D004824FE /* Debug */,
+				9756281D2685353D004824FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 975627E326853535004824FE /* Project object */;
+}
