@@ -47,7 +47,7 @@ extension ArticlesPresenter: ArticlesPresenterProtocol {
     }
     
     func didSelectItemAtIndex(_ index: Int) {
-        
+        coordinator?.loadArticleDetails(with: articles[index])
     }
     
     
@@ -72,9 +72,7 @@ extension ArticlesPresenter: ArticlesInteractorOutputProtocol {
         view?.hideLoading()
         
         guard let data = response.data else {
-            if let message = response.message, message != "" {
-                view?.showAlert(title: "Alert", message: message)
-            }
+            view?.showAlert(title: "Alert", message: response.message ?? NetworkError.SomeThingWentWrong.rawValue)
             return
         }
         

@@ -31,7 +31,7 @@ protocol ArticlesPresenterProtocol: class {
 
 
 protocol ArticlesPresenterDelegate: class {
-    
+    func loadArticleDetails(with article: CustomArticleViewModel)
 }
 
 

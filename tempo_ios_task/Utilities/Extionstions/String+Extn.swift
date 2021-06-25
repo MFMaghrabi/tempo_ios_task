@@ -14,13 +14,10 @@ extension String {
         }
     }
     
-    func convertToDateFormate(current: String, convertTo: String) -> String {
+    func convertToDateFormate(with dateFormat: String) -> String{
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = current
-        guard let date = dateFormatter.date(from: self) else {
-            return self
-        }
-        dateFormatter.dateFormat = convertTo
-        return  dateFormatter.string(from: date)
+        dateFormatter.dateFormat = dateFormat
+        let date = dateFormatter.date(from:  self)
+        return dateFormatter.string(from: date ?? Date())
     }
 }

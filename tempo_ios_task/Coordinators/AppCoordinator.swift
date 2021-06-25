@@ -8,7 +8,9 @@
 import UIKit
 
 
-class AppCoordinator: Coordinator, ArticlesPresenterDelegate{
+class AppCoordinator: Coordinator,
+                      ArticlesPresenterDelegate,
+                      ArticleDetailsPresenterDelegate{
     
     // MARK: Properties
     var navigationController: UINavigationController
@@ -26,6 +28,12 @@ class AppCoordinator: Coordinator, ArticlesPresenterDelegate{
     // load Articles
     func loadArticles(){
         navigationController.pushViewController(ArticlesConfigurator().configuredViewController(delegate: self), animated: true)
+    }
+    
+    
+    // load Article Details
+    func loadArticleDetails(with article: CustomArticleViewModel){
+        navigationController.pushViewController(ArticleDetailsConfigurator().configuredViewController(delegate: self, with: article), animated: true)
     }
     
 }

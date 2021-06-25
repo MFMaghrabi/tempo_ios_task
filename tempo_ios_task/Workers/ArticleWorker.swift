@@ -8,8 +8,8 @@
 import Foundation
 
 enum NetworkError: String, Error {
-    case NotFound = "Not Found"
-    case SomeThingWentWrong = "Some Thing Went Wrong"
+    case NotFound = "Not Found!"
+    case SomeThingWentWrong = "Some Thing Went Wrong!"
 }
 
 class ArticleWorker {

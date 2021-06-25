@@ -40,10 +40,10 @@ struct CustomArticleViewModel {
         sourceNameText = "Source: \(model.source?.name ?? "")"
         autherText = "Auther: \(model.author ?? "")"
         titleText = model.title
-        descriptionText = model.description
+        descriptionText = "Description \n\n\(model.description ?? "")"
         sourceUrl = URL(string: model.url?.safeUrl ?? "")
-        dateText =  (model.publishedAt ?? "").convertToDateFormate(current: "yyyy-MM-dd HH:mm:ss z", convertTo: "yyyy-MM-dd")
-        contentText = model.content ?? ""
+        contentText = "Content \n\n\(model.content ?? "")"
+        dateText = (model.publishedAt ?? "").convertToDateFormate(with: "EEEE, MMM d, yyyy")
     }
 }
 
