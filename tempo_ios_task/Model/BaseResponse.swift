@@ -14,4 +14,12 @@ class BaseResponse<T: Codable>: Codable {
     var totalResults: Int?
     var message: String?
     var data: T?
+    
+    enum CodingKeys: String, CodingKey {
+        case status = "status"
+        case code = "code"
+        case totalResults = "totalResults"
+        case message = "message"
+        case data = "articles"
+    }
 }

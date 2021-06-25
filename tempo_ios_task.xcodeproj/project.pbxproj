@@ -26,6 +26,17 @@
 		9756288426853F8C004824FE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756288326853F8C004824FE /* Article.swift */; };
 		975628892685436E004824FE /* UIImageView+Extn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975628882685436E004824FE /* UIImageView+Extn.swift */; };
 		9756288F268544A8004824FE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9756288E268544A8004824FE /* Kingfisher */; };
+		9756289D26854599004824FE /* ArticlesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9756289626854599004824FE /* ArticlesVC.xib */; };
+		9756289E26854599004824FE /* ArticlesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756289726854599004824FE /* ArticlesPresenter.swift */; };
+		9756289F26854599004824FE /* ArticlesInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756289826854599004824FE /* ArticlesInterfaceDelegate.swift */; };
+		975628A026854599004824FE /* ArticlesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756289926854599004824FE /* ArticlesInteractor.swift */; };
+		975628A126854599004824FE /* ArticlesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756289A26854599004824FE /* ArticlesProtocol.swift */; };
+		975628A226854599004824FE /* ArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756289B26854599004824FE /* ArticlesVC.swift */; };
+		975628A326854599004824FE /* ArticlesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756289C26854599004824FE /* ArticlesConfigurator.swift */; };
+		975628B02685476B004824FE /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975628AE2685476B004824FE /* ArticleCell.swift */; };
+		975628B12685476B004824FE /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975628AF2685476B004824FE /* ArticleCell.xib */; };
+		975628C1268556DE004824FE /* ArticleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975628C0268556DE004824FE /* ArticleWorker.swift */; };
+		975628C62685598C004824FE /* PaginationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975628C52685598C004824FE /* PaginationFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +81,17 @@
 		9756287E26853EFA004824FE /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		9756288326853F8C004824FE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		975628882685436E004824FE /* UIImageView+Extn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extn.swift"; sourceTree = "<group>"; };
+		9756289626854599004824FE /* ArticlesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesVC.xib; sourceTree = "<group>"; };
+		9756289726854599004824FE /* ArticlesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesPresenter.swift; sourceTree = "<group>"; };
+		9756289826854599004824FE /* ArticlesInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesInterfaceDelegate.swift; sourceTree = "<group>"; };
+		9756289926854599004824FE /* ArticlesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesInteractor.swift; sourceTree = "<group>"; };
+		9756289A26854599004824FE /* ArticlesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesProtocol.swift; sourceTree = "<group>"; };
+		9756289B26854599004824FE /* ArticlesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVC.swift; sourceTree = "<group>"; };
+		9756289C26854599004824FE /* ArticlesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesConfigurator.swift; sourceTree = "<group>"; };
+		975628AE2685476B004824FE /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		975628AF2685476B004824FE /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		975628C0268556DE004824FE /* ArticleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWorker.swift; sourceTree = "<group>"; };
+		975628C52685598C004824FE /* PaginationFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +242,7 @@
 			children = (
 				9756287E26853EFA004824FE /* BaseResponse.swift */,
 				9756288326853F8C004824FE /* Article.swift */,
+				975628C52685598C004824FE /* PaginationFilter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +250,14 @@
 		97562863268539DA004824FE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				975628AD26854755004824FE /* TableViewCells */,
+				9756289626854599004824FE /* ArticlesVC.xib */,
+				9756289B26854599004824FE /* ArticlesVC.swift */,
+				9756289726854599004824FE /* ArticlesPresenter.swift */,
+				9756289826854599004824FE /* ArticlesInterfaceDelegate.swift */,
+				9756289926854599004824FE /* ArticlesInteractor.swift */,
+				9756289A26854599004824FE /* ArticlesProtocol.swift */,
+				9756289C26854599004824FE /* ArticlesConfigurator.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -252,8 +283,18 @@
 		9756287D26853EDB004824FE /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				975628C0268556DE004824FE /* ArticleWorker.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		975628AD26854755004824FE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				975628AE2685476B004824FE /* ArticleCell.swift */,
+				975628AF2685476B004824FE /* ArticleCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,7 +406,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975628B12685476B004824FE /* ArticleCell.xib in Resources */,
 				975627FB2685353D004824FE /* LaunchScreen.storyboard in Resources */,
+				9756289D26854599004824FE /* ArticlesVC.xib in Resources */,
 				975627F82685353D004824FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,16 +438,25 @@
 				9756287926853AC8004824FE /* AppCoordinator.swift in Sources */,
 				9756284F268538DA004824FE /* BaseViewController.swift in Sources */,
 				97562847268538AA004824FE /* BaseNavigationController.swift in Sources */,
+				975628C62685598C004824FE /* PaginationFilter.swift in Sources */,
+				9756289E26854599004824FE /* ArticlesPresenter.swift in Sources */,
 				9756287F26853EFA004824FE /* BaseResponse.swift in Sources */,
 				9756287426853AA7004824FE /* Coordinator.swift in Sources */,
 				9756283D2685385F004824FE /* HUDView.swift in Sources */,
 				9756285E2685399B004824FE /* String+Extn.swift in Sources */,
 				975627EF26853536004824FE /* AppDelegate.swift in Sources */,
+				975628C1268556DE004824FE /* ArticleWorker.swift in Sources */,
 				975627F126853536004824FE /* SceneDelegate.swift in Sources */,
+				975628B02685476B004824FE /* ArticleCell.swift in Sources */,
 				9756286726853A0F004824FE /* Alertable.swift in Sources */,
 				9756286F26853A86004824FE /* HUDDisplayable.swift in Sources */,
+				9756289F26854599004824FE /* ArticlesInterfaceDelegate.swift in Sources */,
+				975628A226854599004824FE /* ArticlesVC.swift in Sources */,
+				975628A126854599004824FE /* ArticlesProtocol.swift in Sources */,
+				975628A026854599004824FE /* ArticlesInteractor.swift in Sources */,
 				9756285626853976004824FE /* UIViewController+Extn.swift in Sources */,
 				975628892685436E004824FE /* UIImageView+Extn.swift in Sources */,
+				975628A326854599004824FE /* ArticlesConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

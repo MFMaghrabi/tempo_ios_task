@@ -8,7 +8,7 @@
 import UIKit
 
 
-class AppCoordinator: Coordinator{
+class AppCoordinator: Coordinator, ArticlesPresenterDelegate{
     
     // MARK: Properties
     var navigationController: UINavigationController
@@ -20,6 +20,12 @@ class AppCoordinator: Coordinator{
     
     //MARK: - start
     func start() {
+        loadArticles()
+    }
+    
+    // load Articles
+    func loadArticles(){
+        navigationController.pushViewController(ArticlesConfigurator().configuredViewController(delegate: self), animated: true)
     }
     
 }

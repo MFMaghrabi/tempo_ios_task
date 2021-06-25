@@ -19,7 +19,31 @@ struct Article: Codable {
 }
 
 struct Source: Codable {
-    let id: Int?
+    let id: String?
     let name: String?
+}
+
+
+struct CustomArticleViewModel {
+    let imageUrl: URL?
+    let sourceNameText: String?
+    let autherText: String?
+    let titleText: String?
+    let descriptionText: String?
+    let sourceUrl: URL?
+    let dateText: String?
+    let contentText: String?
+    
+    
+    init(_ model: Article) {
+        imageUrl = URL(string: model.urlToImage?.safeUrl ?? "")
+        sourceNameText = "Source: \(model.source?.name ?? "")"
+        autherText = "Auther: \(model.author ?? "")"
+        titleText = model.title
+        descriptionText = model.description
+        sourceUrl = URL(string: model.url?.safeUrl ?? "")
+        dateText =  (model.publishedAt ?? "").convertToDateFormate(current: "yyyy-MM-dd HH:mm:ss z", convertTo: "yyyy-MM-dd")
+        contentText = model.content ?? ""
+    }
 }
 
