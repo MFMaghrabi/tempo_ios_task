@@ -20,7 +20,7 @@ class ArticleWorker {
     
     func getArticles(filter: PaginationFilter, completionHandler: @escaping( Result<BaseResponse<[Article]>, NetworkError>) -> Void){
         
-        var parameters = ["from":"2021-05-25",
+        var parameters = ["from":"2021-06-20",
                           "sortBy":"publishedAt",
                           "pageSize": String(filter.itemsPerPage),
                           "page": String(filter.pageIndex),
